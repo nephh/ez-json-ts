@@ -55,7 +55,6 @@ async function handleString(key: string, value: string) {
       })}@${randString(randNumber(2, 5))}.com`,
     ];
   } else {
-    console.log("Generating value for key:", key);
     const newValue = await generateValue(key);
     return [key, newValue];
   }
